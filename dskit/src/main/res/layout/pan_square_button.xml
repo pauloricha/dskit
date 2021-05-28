@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <TextView
+        android:id="@+id/square_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_64"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/isidora_sans_semibold"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_19"
+        android:paddingBottom="@dimen/dimen_19"
+        android:textAllCaps="false"
+        android:textSize="@dimen/font_20"
+        app:autoSizeMaxTextSize="@dimen/font_20"
+        app:autoSizeMinTextSize="@dimen/font_14"
+        app:autoSizeStepGranularity="1sp"
+        tools:textColor="@color/black"
+        tools:text="PanSquareButton" />
+
+</FrameLayout>

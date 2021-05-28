@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="Theme.DSKit" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:background">@color/light_white</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:statusBarColor">@color/light_white</item>
+        <item name="android:navigationContentDescription">@color/black</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:color">@color/black</item>
+    </style>
+
+    <style name="Theme.DSKitBlue" parent="Theme.DSKit">
+        <item name="android:statusBarColor">@color/dodger_blue</item>
+        <item name="android:navigationContentDescription">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.DSKitGray" parent="Theme.DSKit">
+        <item name="android:statusBarColor">@color/dark_gray</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

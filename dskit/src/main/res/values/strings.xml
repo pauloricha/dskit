@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DSKit</string>
+
+    <string name="txt_back">voltar</string>
+    <string name="txt_close">fechar</string>
+
+</resources>

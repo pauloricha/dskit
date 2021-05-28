@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PanRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/isidora_sans_semibold</item>
+        <item name="android:textSize">@dimen/font_24</item>
+    </style>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent" >
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_16"
+        android:backgroundTint="@color/dodger_blue"
+        android:textSize="@dimen/font_22"
+        android:inputType="numberDecimal"
+        android:lineSpacingExtra="8dp"
+        android:textColorHint="@color/dodger_blue"
+        android:fontFamily="@font/isidora_sans_semibold"
+        android:gravity="center"
+        android:ellipsize="start"
+        android:textColor="@color/black"
+        tools:text="R$ 0,00" />
+</FrameLayout>

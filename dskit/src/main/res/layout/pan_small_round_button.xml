@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/small_round_button"
+        android:layout_width="174dp"
+        android:layout_height="@dimen/dimen_48"
+        android:fontFamily="@font/isidora_sans_regular"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textSize="@dimen/font_20"
+        android:textColor="@color/black"
+        android:enabled="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@android:color/transparent"
+        app:autoSizeMaxTextSize="@dimen/font_20"
+        app:autoSizeMinTextSize="@dimen/font_14"
+        app:autoSizeStepGranularity="1sp"
+        tools:text="PanSmallBtn" />
+
+</FrameLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white"
+    android:fillViewport="true"
+    tools:context=".DSKitActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.pan.dskit.textview.PanTitleLabel.PanTitleLabel
+            android:id="@+id/txtTitleLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_48"
+            android:layout_marginTop="@dimen/dimen_40"
+            app:text_label="PanTitleLabel"
+            app:align_label="center" />
+
+        <com.pan.dskit.textview.PanTitleLabel.PanTitleLabel
+            android:id="@+id/txtTitleLabelBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleLabel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_48"
+            app:text_label="PanTitleLabel"
+            app:color_label="blue"
+            app:align_label="center" />
+
+        <com.pan.dskit.textview.PanTitleLabel.PanTitleLabel
+            android:id="@+id/txtTitleLabelWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleLabelBlue"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_48"
+            app:text_label="PanTitleLabel"
+            app:color_label="white"
+            app:align_label="center" />
+
+        <com.pan.dskit.textview.PanLabel.PanLabel
+            android:id="@+id/txtLabelBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleLabelWhite"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_48"
+            app:text_label="PanLabel"
+            app:align_label="center" />
+
+        <com.pan.dskit.textview.PanLabel.PanLabel
+            android:id="@+id/txtLabelBoldBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txtLabelBold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_48"
+            app:text_label="PanLabel"
+            app:color_label="blue"
+            app:align_label="center"/>
+
+        <com.pan.dskit.textview.PanLabel.PanLabel
+            android:id="@+id/txtLabelBoldWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_48"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLabelBoldBlue"
+            app:text_label="PanLabel"
+            app:color_label="white"
+            app:align_label="center"/>
+
+        <com.pan.dskit.textview.PanLabel.PanLabel
+            android:id="@+id/txtLabelRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_48"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLabelBoldWhite"
+            app:text_label="PanLabel"
+            app:style_label="regular"
+            app:align_label="center" />
+
+        <com.pan.dskit.textview.PanLabel.PanLabel
+            android:id="@+id/txtLabelRegularBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_48"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLabelRegular"
+            app:text_label="PanLabel"
+            app:color_label="blue"
+            app:style_label="regular"
+            app:align_label="center"/>
+
+        <com.pan.dskit.textview.PanLabel.PanLabel
+            android:id="@+id/txtLabelRegularWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_48"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLabelRegularBlue"
+            app:text_label="PanLabel"
+            app:color_label="white"
+            app:style_label="regular"
+            app:align_label="center"/>
+
+        <com.pan.dskit.textview.PanSmallLabel.PanSmallLabel
+            android:id="@+id/txtSmallLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_48"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLabelRegularWhite"
+            app:text_label="PanLabel"
+            app:style_label="regular"
+            app:align_label="center" />
+
+        <com.pan.dskit.textview.PanSmallLabel.PanSmallLabel
+            android:id="@+id/txtSmallLabelBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_48"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSmallLabel"
+            app:text_label="PanLabel"
+            app:color_label="blue"
+            app:style_label="regular"
+            app:align_label="center" />
+
+        <com.pan.dskit.textview.PanSmallLabel.PanSmallLabel
+            android:id="@+id/txtSmallLabelWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_48"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSmallLabelBlue"
+            app:text_label="PanLabel"
+            app:color_label="white"
+            app:style_label="regular"
+            app:align_label="center" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
