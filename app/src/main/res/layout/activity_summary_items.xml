@@ -13,27 +13,26 @@
             android:id="@+id/summaryItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/dimen_64"
-            android:background="@color/dodger_blue"
-            app:layout_constraintVertical_bias="0"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:text_key_item="Title"
+            app:layout_constraintVertical_bias="0"
+            android:padding="@dimen/dimen_64"
+            android:background="@color/dodger_blue"
+            app:text_title_item="Title"
             app:text_value_item="Value"
-            app:type_summary_item="primary"/>
+            app:theme_summary_item="primary"/>
 
         <com.pan.dskit.items.PanSummaryItem.PanSummaryItem
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="@dimen/dimen_64"
             app:layout_constraintTop_toBottomOf="@+id/summaryItem"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:text_key_item="Title"
+            android:padding="@dimen/dimen_64"
+            app:text_title_item="Title"
             app:text_value_item="Value"
-            app:type_summary_item="secundary"/>
+            app:theme_summary_item="secundary"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

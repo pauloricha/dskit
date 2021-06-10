@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_white">
+    android:background="@color/light_white"
+    android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,32 +15,29 @@
             android:id="@+id/btnRoundPrimary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_40"
-            android:layout_marginTop="@dimen/dimen_40"
-            android:layout_marginEnd="@dimen/dimen_40"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:text_button="PanRoundButton"
-            app:theme_button="primary" />
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            app:theme_button="primary"
+            app:text_button="PanRoundButton" />
 
         <com.pan.dskit.button.PanRoundButton.PanRoundButton
             android:id="@+id/btnRoundSecundary"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="48dp"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnRoundPrimary"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnRoundPrimary"
-            app:text_button="PanRoundButton"
-            app:theme_button="secundary" />
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            app:theme_button="secundary"
+            app:text_button="PanRoundButton" />
 
         <com.pan.dskit.button.PanRoundButton.PanSmallRoundButton
             android:id="@+id/btnSmallRoundSecundary"
@@ -48,74 +46,65 @@
             app:layout_constraintTop_toBottomOf="@+id/btnRoundSecundary"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintVertical_bias="0"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="48dp"
-            app:text_button="PanSmallButton"
-            app:theme_button="secundary" />
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            app:theme_button="secundary"
+            app:text_button="PanSmallButton" />
 
         <com.pan.dskit.button.PanSquareButton.PanSquareButton
             android:id="@+id/btnSquarePrimary"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="48dp"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSmallRoundSecundary"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnSmallRoundSecundary"
-            app:text_button="PanSquareButton"
-            app:theme_button="primary" />
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="@dimen/dimen_40"
+            app:theme_button="primary"
+            app:text_button="PanSquareButton" />
 
         <com.pan.dskit.button.PanSquareButton.PanSquareButton
             android:id="@+id/btnSquareSecundary"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimen_40"
-            android:layout_marginBottom="@dimen/dimen_48"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSquarePrimary"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnSquarePrimary"
-            app:text_button="PanSquareButton"
-            app:theme_button="secundary" />
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="@dimen/dimen_40"
+            app:theme_button="secundary"
+            app:text_button="PanSquareButton" />
 
         <com.pan.dskit.button.PanLinkButton.PanLinkButton
             android:id="@+id/btnLinkPrimary"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintVertical_bias="0"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="48dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSquareSecundary"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnSquareSecundary"
-            app:text_button="PanLinkButton"
-            app:theme_button="primary" />
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            app:theme_button="primary"
+            app:text_button="PanLinkButton" />
 
         <com.pan.dskit.button.PanLinkButton.PanLinkButton
             android:id="@+id/btnLinkSecundary"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintVertical_bias="0"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="48dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLinkPrimary"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnLinkPrimary"
-            app:text_button="PanLinkButton"
-            app:theme_button="secundary" />
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_40"
+            app:theme_button="secundary"
+            app:text_button="PanLinkButton" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

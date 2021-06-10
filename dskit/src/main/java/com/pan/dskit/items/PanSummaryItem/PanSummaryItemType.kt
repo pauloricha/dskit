@@ -4,7 +4,7 @@ import androidx.annotation.ColorRes
 import com.pan.dskit.R
 
 sealed class PanSummaryItemType {
-    abstract val keyColor : Int
+    abstract val titleColor : Int
     abstract val valueColor: Int
 
     companion object {
@@ -21,12 +21,12 @@ sealed class PanSummaryItemType {
 
 object SummaryItemPrimary : PanSummaryItemType() {
     @ColorRes
-    override val keyColor : Int = R.color.black
+    override val titleColor : Int = R.color.black
     override val valueColor : Int = R.color.white
 }
 
 object SummaryItemSecundary : PanSummaryItemType() {
     @ColorRes
-    override val keyColor : Int = R.color.black
+    override val titleColor : Int = R.color.black
     override val valueColor : Int = R.color.black
 }

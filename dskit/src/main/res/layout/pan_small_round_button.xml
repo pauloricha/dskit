@@ -10,7 +10,7 @@
         android:id="@+id/small_round_button"
         android:layout_width="174dp"
         android:layout_height="@dimen/dimen_48"
-        android:fontFamily="@font/isidora_sans_regular"
+        android:fontFamily="@font/isidora_sans_medium"
         android:gravity="center"
         android:textAllCaps="false"
         android:textSize="@dimen/font_20"

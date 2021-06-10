@@ -10,8 +10,8 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import com.pan.dskit.R
 import com.pan.dskit.handlerAttrs
-import com.pan.dskit.textview.PanLabel.PanLabelStyle
-import com.pan.dskit.textview.PanTitleLabel.PanTitleLabelColor
+import com.pan.dskit.textview.PanLabel.PanFontLabel
+import com.pan.dskit.textview.PanLabel.PanLabelColor
 
 class PanSmallLabel @JvmOverloads constructor(
     context: Context,
@@ -35,11 +35,11 @@ class PanSmallLabel @JvmOverloads constructor(
                 }
 
                 R.styleable.PanLabel_color_label -> {
-                    setTextColor(typedArray.getInt(currentAttribute, 0))
+                    setColorLabel(typedArray.getInt(currentAttribute, 0))
                 }
 
-                R.styleable.PanLabel_style_label -> {
-                    setTextStyle(typedArray.getInt(currentAttribute, 0))
+                R.styleable.PanLabel_font_label -> {
+                    setFontLabel(typedArray.getInt(currentAttribute, 0))
                 }
 
                 R.styleable.PanLabel_align_label -> {
@@ -49,18 +49,18 @@ class PanSmallLabel @JvmOverloads constructor(
         }
     }
 
-    private fun setTextStyle(font: Int?) {
+    private fun setFontLabel(font: Int?) {
         font?.let {
             val typeface: Typeface? = ResourcesCompat.getFont(context,
-                PanLabelStyle.getTypeByKey(font).textStyle)
+                PanFontLabel.getTypeByKey(font).fontLabel)
             smallLabel?.setTypeface(typeface);
         }
     }
 
-    fun setTextColor(color: Int?){
+    fun setColorLabel(color: Int?){
         color?.let {
             smallLabel?.setTextColor(ContextCompat.getColor(context,
-                PanTitleLabelColor.getTypeByKey(color).textColor))
+                PanLabelColor.getTypeByKey(color).textColor))
         }
     }
 

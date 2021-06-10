@@ -2,39 +2,35 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@android:color/transparent" >
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/btnBack"
         android:layout_width="@dimen/dimen_24"
         android:layout_height="@dimen/dimen_24"
-        android:layout_marginStart="@dimen/dimen_24"
-        android:clickable="true"
-        android:focusable="true"
-        android:fontFamily="@font/isidora_sans_semibold"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/dimen_24"
+        android:background="@android:color/transparent"
+        android:clickable="true"
         android:contentDescription="@string/txt_back"
+        android:focusable="true"
         app:srcCompat="@drawable/ic_back_black"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/btnClose"
         android:layout_width="@dimen/dimen_24"
         android:layout_height="@dimen/dimen_24"
-        android:layout_marginEnd="@dimen/dimen_24"
-        android:clickable="true"
-        android:focusable="true"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/isidora_sans_semibold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/dimen_24"
+        android:background="@android:color/transparent"
+        android:clickable="true"
         android:contentDescription="@string/txt_close"
+        android:focusable="true"
         app:srcCompat="@drawable/ic_close_black"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

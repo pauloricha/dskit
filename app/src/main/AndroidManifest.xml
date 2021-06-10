@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".toolbar.ToolbarsActivity">
+        <activity android:name=".toolbars.ToolbarsActivity">
         </activity>
 
         <activity android:name=".buttons.ButtonsActivity">

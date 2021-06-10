@@ -1,9 +1,8 @@
-package com.pan.app.toolbar
+package com.pan.app.toolbars
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.pan.app.R
-import com.pan.dskit.seekbar.PanSlider.PanSlider
 import com.pan.dskit.toolbar.PanToolbar.PanToolbar
 
 class ToolbarsActivity : AppCompatActivity() {

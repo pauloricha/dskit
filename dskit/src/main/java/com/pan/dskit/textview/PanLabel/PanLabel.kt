@@ -10,7 +10,6 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import com.pan.dskit.R
 import com.pan.dskit.handlerAttrs
-import com.pan.dskit.textview.PanTitleLabel.PanTitleLabelColor
 
 class PanLabel @JvmOverloads constructor(
     context: Context,
@@ -37,8 +36,8 @@ class PanLabel @JvmOverloads constructor(
                     setTextColor(typedArray.getInt(currentAttribute, 0))
                 }
 
-                R.styleable.PanLabel_style_label -> {
-                    setTextStyle(typedArray.getInt(currentAttribute, 0))
+                R.styleable.PanLabel_font_label -> {
+                    setFontLabel(typedArray.getInt(currentAttribute, 2))
                 }
 
                 R.styleable.PanLabel_align_label -> {
@@ -48,10 +47,10 @@ class PanLabel @JvmOverloads constructor(
         }
     }
 
-    private fun setTextStyle(font: Int?) {
+    private fun setFontLabel(font: Int?) {
         font?.let {
             val typeface: Typeface? = ResourcesCompat.getFont(context,
-                PanLabelStyle.getTypeByKey(font).textStyle)
+                PanFontLabel.getTypeByKey(font).fontLabel)
             label?.setTypeface(typeface);
         }
     }
@@ -59,7 +58,7 @@ class PanLabel @JvmOverloads constructor(
     fun setTextColor(color: Int?){
         color?.let {
             label?.setTextColor(ContextCompat.getColor(context,
-                PanTitleLabelColor.getTypeByKey(color).textColor))
+                PanLabelColor.getTypeByKey(color).textColor))
         }
     }
 

@@ -41,7 +41,7 @@
             android:textAllCaps="false"
             android:textSize="@dimen/font_18"
             android:lineSpacingExtra="4dp"
-            tools:textColor="@color/white"
+            android:textColor="@color/white"
             tools:text="ImageInfoItem" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

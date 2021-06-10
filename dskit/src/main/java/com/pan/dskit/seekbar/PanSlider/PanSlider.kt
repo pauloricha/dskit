@@ -63,7 +63,6 @@ class PanSlider @JvmOverloads constructor(
         seekbar?.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 progressValue = progress.toString()
-
                 listener?.onStartTrackingTouch(seekBar)
                 listener?.onProgressChanged(seekBar, progress, fromUser, progressValue)
                 listener?.onStopTrackingTouch(seekBar)

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_white"
-    tools:context=".MainActivity">
+    android:background="@android:color/transparent"
+    android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,18 +12,16 @@
 
         <com.pan.dskit.textview.PanTitleLabel.PanTitleLabel
             android:id="@+id/txtValuePercentage"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_40"
-            android:layout_marginTop="@dimen/dimen_40"
-            android:layout_marginEnd="@dimen/dimen_40"
-            android:layout_marginBottom="@dimen/dimen_48"
-            android:gravity="center"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_40"
+            android:layout_marginEnd="@dimen/dimen_40"
+            android:background="@android:color/transparent"
             app:text_label="0"
             app:color_label="blue"/>
 
@@ -32,15 +29,13 @@
             android:id="@+id/slider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimen_40"
-            android:layout_marginBottom="@dimen/dimen_48"
-            android:layout_marginStart="@dimen/dimen_24"
-            android:layout_marginEnd="@dimen/dimen_24"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtValuePercentage"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtValuePercentage"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_24"
             app:min_value="0"
             app:max_value="1500" />
 

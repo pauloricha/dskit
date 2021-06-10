@@ -27,11 +27,11 @@ class PanSummaryItem @JvmOverloads constructor(
         attrs.handlerAttrs(context, R.styleable.PanSummaryItem) {
             typedArray, currentAttribute ->
             when(currentAttribute){
-                R.styleable.PanSummaryItem_type_summary_item -> {
+                R.styleable.PanSummaryItem_theme_summary_item -> {
                     setTheme(typedArray.getInt(currentAttribute, 0))
                 }
 
-                R.styleable.PanSummaryItem_text_key_item -> {
+                R.styleable.PanSummaryItem_text_title_item -> {
                     setTitleText(typedArray.getString(currentAttribute))
                 }
 
@@ -47,7 +47,7 @@ class PanSummaryItem @JvmOverloads constructor(
     }
 
     private fun setupTheme(summaryItemType: PanSummaryItemType) {
-        keyLabel.setTextColor(ContextCompat.getColor(context, summaryItemType.keyColor))
+        keyLabel.setTextColor(ContextCompat.getColor(context, summaryItemType.titleColor))
         valueLabel.setTextColor(ContextCompat.getColor(context, summaryItemType.valueColor))
     }
 

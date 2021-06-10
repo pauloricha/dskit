@@ -1,9 +1,9 @@
-package com.pan.dskit.textview.PanTitleLabel
+package com.pan.dskit.textview.PanLabel
 
 import androidx.annotation.ColorRes
 import com.pan.dskit.R
 
-sealed class PanTitleLabelColor {
+sealed class PanLabelColor {
 
     abstract val textColor: Int
 
@@ -21,17 +21,17 @@ sealed class PanTitleLabelColor {
     }
 }
 
-object BlueColor : PanTitleLabelColor() {
+object BlueColor : PanLabelColor() {
     @ColorRes
     override val textColor: Int = R.color.dodger_blue
 }
 
-object WhiteColor : PanTitleLabelColor() {
+object WhiteColor : PanLabelColor() {
     @ColorRes
     override val textColor: Int = R.color.white
 }
 
-object BlackColor : PanTitleLabelColor() {
+object BlackColor : PanLabelColor() {
     @ColorRes
     override val textColor: Int = R.color.black
 }

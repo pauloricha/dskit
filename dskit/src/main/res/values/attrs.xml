@@ -9,11 +9,11 @@
     </declare-styleable>
 
     <declare-styleable name="PanSummaryItem">
-        <attr name="type_summary_item" format="enum">
+        <attr name="theme_summary_item" format="enum">
             <enum name="primary" value="0" />
             <enum name="secundary" value="1" />
         </attr>
-        <attr name="text_key_item" format="string" />
+        <attr name="text_title_item" format="string" />
         <attr name="text_value_item" format="string" />
     </declare-styleable>
 
@@ -33,9 +33,10 @@
             <enum name="white" value="1" />
             <enum name="black" value="2" />
         </attr>
-        <attr name="style_label" format="enum">
+        <attr name="font_label" format="enum">
             <enum name="regular" value="0" />
-            <enum name="semibold" value="1" />
+            <enum name="medium" value="1" />
+            <enum name="semibold" value="2" />
         </attr>
         <attr name="align_label" format="enum">
             <enum name="start" value="5" />

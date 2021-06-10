@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.pan.dskit.R
 import com.pan.dskit.handlerAttrs
+import com.pan.dskit.textview.PanLabel.PanLabelColor
 
 class PanTitleLabel @JvmOverloads constructor(
     context: Context,
@@ -31,7 +32,7 @@ class PanTitleLabel @JvmOverloads constructor(
                 R.styleable.PanLabel_color_label -> {
                     color = typedArray.getInt(currentAttribute, 0)
                     setColorLabel(ContextCompat.getColor(context,
-                        PanTitleLabelColor.getTypeByKey(color).textColor))
+                        PanLabelColor.getTypeByKey(color).textColor))
                 }
 
                 R.styleable.PanLabel_align_label -> {
@@ -65,6 +66,10 @@ class PanTitleLabel @JvmOverloads constructor(
         text?.let {
             titleLabel?.text = text
         }
+    }
+
+    fun getTextLabel() : String{
+        return titleLabel.text.toString()
     }
 
     fun setSizeLabel(size: Int?){

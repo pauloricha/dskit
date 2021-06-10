@@ -15,7 +15,7 @@ import com.pan.app.items.SummaryItem.SummaryItemActivity
 import com.pan.app.labels.LabelsActivity
 import com.pan.app.radiogroup.RadioGroupActivity
 import com.pan.app.seekbar.SliderActivity
-import com.pan.app.toolbar.ToolbarsActivity
+import com.pan.app.toolbars.ToolbarsActivity
 
 class ComponentsAdapter(private val components: List<String>, val context: Context) :
     RecyclerView.Adapter<ComponentsAdapter.ViewHolder>() {
